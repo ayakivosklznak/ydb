@@ -475,6 +475,21 @@ common:
 
 
 ru:
+  # concepts/ → concepts/query_execution/ (DOCSUP-119247)
+  - from: /concepts/query_execution.md
+    to: /concepts/query_execution/index.md
+  - from: /concepts/mvcc.md
+    to: /concepts/query_execution/mvcc.md
+  - from: /concepts/optimizer.md
+    to: /concepts/query_execution/optimizer.md
+  - from: /concepts/spilling.md
+    to: /concepts/query_execution/spilling.md
+  - from: /concepts/vector_search.md
+    to: /concepts/query_execution/vector_search.md
+  - from: /concepts/secondary_indexes.md
+    to: /concepts/query_execution/secondary_indexes.md
+  - from: /concepts/federated_query/(.*)$
+    to: /concepts/query_execution/federated_query/$1
   - from: /postgresql/index.md
     to: /postgresql/intro.md
   - from: /db/terraform.md
